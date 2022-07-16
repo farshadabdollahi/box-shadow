@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 250px;
+            background: #0F2027;
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        }
+
+        .para {
+            margin: 50px auto;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 237px;
+            height: 74px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 36px;
+            border: 1px solid white;
+            transition: 1.2s;
+            transition-timing-function: cubic-bezier(.04,.86,.53,.58);
+            position: relative;
+
+        }
+
+        a::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 6px;
+            border: 1px solid wheat;
+            position: absolute;
+            top: -4px;
+            left: 200px;
+            transition: 1.2s;
+        }
+
+        a:hover::before {
+            background-color: rgba(0, 0, 255, 0.719);
+            left: 25px;
+            border: 1px solid rgba(25, 25, 233, 0.932);
+            width: 30px;
+        }
+
+        a::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 6px;
+            border: 1px solid wheat;
+            position: absolute;
+            top: 67px;
+            left: 20px;
+            transition: 1.2s;
+        }
+
+        a:hover::after {
+            background-color: rgba(0, 0, 255, 0.719);
+            left: 180px;
+            border: 1px solid rgba(0, 0, 255, 0.719);
+            width: 30px
+            
+        }
+
+        a:hover {
+            box-shadow: 0 0 15px 20px rgba(48, 48, 238, 0.247);
+            border: 1px solid rgba(0, 0, 255, 0.521);
+            transform: scale(1.01);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span><a href="">button</a></span>
+        <span><a class="para" href="">button</a></span>
+        <span><a class="para1" href="">button</a></span>
+    </div>
+
+</html>
